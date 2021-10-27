@@ -10,7 +10,7 @@ const Intro = () => {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["Designer", "Developer", "Content Creator"]
+            strings: ["Designer", "Developer", "Content Creator", "3D Visual Artist"]
         })
     },[])
 
