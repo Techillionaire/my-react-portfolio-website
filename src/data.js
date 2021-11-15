@@ -4,31 +4,31 @@ export const designPortfolio =  [
     {
         id: 1,
         title: "Law App",
-        img: "assets/man3.png"
+        img: "./assets/man3.png"
     },
     {
         id: 2,
-        title: "Law App",
+        title: "health App",
         img: "assets/man3.png"
     },
     {
         id: 3,
-        title: "Law App",
+        title: "Bank App",
         img: "assets/man3.png"
     },
     {
         id: 4,
-        title: "Law App",
+        title: "School App",
         img: "assets/man3.png"
     },
     {
         id: 5,
-        title: "Law App",
+        title: "Church App",
         img: "assets/man3.png"
     },
     {
         id: 6,
-        title: "Law App",
+        title: "Mosque App",
         img: "assets/man3.png"
     },
 ];

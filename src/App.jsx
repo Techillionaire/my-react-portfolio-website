@@ -1,6 +1,6 @@
 import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
-import About from "./components/about/About";
+// import About from "./components/about/About";
 import Portfolio from "./components/portfolio/Portfolio";
 import Works from "./components/works/Works";
 import Testimonials from "./components/testimonials/Testimonials";
@@ -12,7 +12,7 @@ import { useState } from "react";
 
 const App = () => {
 
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="app">
@@ -20,7 +20,7 @@ const App = () => {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro />
-        <About />
+        {/* <About /> */}
         <Portfolio />
         <Works />
         <Testimonials />

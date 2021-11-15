@@ -33,47 +33,51 @@ export default function Portfolio() {
         },
         {
             id: "content",
-            title: "Content Creator",
-        },
-
+            title: "Contents",
+        }
     ];
-
-    useEffect (() => {
+    
+    useEffect(() => {
 
         switch(selected){
-            case "design":
+            case"design":
                 setData(designPortfolio);
                 break;
-            case "web":
+            case"web":
                 setData(webPortfolio);
                 break;
-            case "mobile":
+            case"mobile":
                 setData(mobilePortfolio);
                 break;
-            case "threeD":
+            case"threeD":
                 setData(threeDPortfolio);
                 break;
-            case "content":
+            case"content":
                 setData(contentPortfolio);
                 break;
-            default: 
+            default:
                 setData(designPortfolio);
+                break;
         }
-
-    }),[selected];
+    }, [selected])
 
     return(
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <ul>
                 {list.map((item) => (
-                    <PortfolioList title={item.title} active={selected === item.id} setSelected={setSelected} id={item.id}/>
+                    <PortfolioList 
+                        title={item.title} 
+                        active={selected === item.id} 
+                        setSelected={setSelected} 
+                        id={item.id} 
+                    />
                 ))}
             </ul>
             <div className="container">
                 {data.map((d) => (
                     <div className="item">
-                        <img src="{d.img}" alt="banking-app-photo" />
+                        <img src={d.img} alt="banking-app-photo" />
                         <h3>{d.title}</h3>
                     </div>
                 ))}
